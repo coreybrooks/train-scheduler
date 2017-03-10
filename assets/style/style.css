@@ -1,3 +1,8 @@
+body {
+	background-image: url('../images/train1.jpg');
+    color: #E6E2AF;
+}
+
 .header {
   font-weight: bold;
   color: white;
@@ -6,3 +11,43 @@
   margin-bottom: 5px;
 }
 
+.container {
+	background-color: black;
+	width: 100%;
+	max-width: 800px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.top-header {
+	color: #E6E2AF;
+	}
+
+.panel-heading {
+	background-color: #002F2F;
+}
+
+.main-title {
+	font-size: 30px;
+	text-decoration: underline;
+}
+
+.main-panel {
+	margin-bottom: 0px;
+	background-color: #046380;
+}
+
+.panel-title {
+	background-color: #046380;
+	padding: 10px;
+    border-radius: 5px;
+	}
+
+#add-train-title {
+    color: white;
+    font-size: 28px;
+}
+
+.bottom-panel {
+	margin-top: -5px;
+}

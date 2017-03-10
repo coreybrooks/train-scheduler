@@ -26,7 +26,7 @@
     var validTest = moment(trainFirst, 'HH:mm').isValid();
 
  	if (!validTest) {
-	  alert('that is not a valid time');
+	  alert('Invalid time! Please enter the start time for the first train in military time.  Example: 1:30 PM = 13:30');
       $('#first').val('');  	  //clear the time text box
 	  return;
     }
@@ -68,7 +68,6 @@
 
     var totalMinutes = moment().diff(moment(first, 'HH:mm'), 'minutes');
 
-    console.log('totalMinutes1 ' + totalMinutes);
 
     var timeSinceLastArrival = totalMinutes % frequency;
     var minutesAway = frequency - timeSinceLastArrival;
@@ -80,9 +79,9 @@
 	    minutesAway = (moment().diff(moment(first, 'HH:mm'), 'minutes'))*(-1) + ' *';
     }
 
-
+    console.log('Train name: ' + name);
     console.log('first ' + first);
-    console.log('totalMinutes ' + totalMinutes);
+    console.log('totalMinutes check: ' + totalMinutes);
     console.log('timeSinceLastArrival ' + timeSinceLastArrival);
     console.log('frequency ' + frequency);
     console.log('minutesAway ' + minutesAway);
