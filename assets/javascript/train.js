@@ -73,6 +73,7 @@
     var minutesAway = frequency - timeSinceLastArrival;
     var nextArrival = moment().add(minutesAway, 'minutes').format('HH:mm');
 
+    //set up a coniditional statement to alter variables if the first train has not arrived yet
     if (totalMinutes < 0) {
 	    nextArrival = first;
 	    timeSinceLastArrival = '';
@@ -90,8 +91,8 @@
 
 
  	//append each train's data into the table
- 	$('.display-table').append('<tr><td>' + name + '</td><td>' + destination + '</td><td>' + frequency + '</td><td>' + 
- 	nextArrival + '</td><td>' + minutesAway + '</td></tr>');
+ 	$('.display-table').append('<tr><td>' + name + '</td><td>' + destination + '</td><td>' + 
+    frequency + '</td><td>' + nextArrival + '</td><td>' + minutesAway + '</td></tr>');
 
  })
 

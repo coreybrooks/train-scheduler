@@ -12,11 +12,14 @@ body {
 }
 
 .container {
-	background-color: black;
+	background-color: #0F0F0C;
 	width: 100%;
 	max-width: 800px;
 	padding-left: 30px;
 	padding-right: 30px;
+	border: 1px solid;
+	border-color: #046380;
+
 }
 
 .top-header {
@@ -24,12 +27,16 @@ body {
 	}
 
 .panel-heading {
-	background-color: #002F2F;
+	background-color: #046380;
 }
 
 .main-title {
 	font-size: 30px;
 	text-decoration: underline;
+}
+
+#main-title {
+	color: 	#E6E2AF;
 }
 
 .main-panel {
