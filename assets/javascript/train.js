@@ -1,4 +1,6 @@
 
+I am in the test branch
+
   // Initialize Firebase
   var config = {
     apiKey: "AIzaSyDJP2AR7O4UOHMjOnUQTHFtBpV3s6gH3MU",
